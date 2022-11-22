@@ -1,7 +1,7 @@
-const {Person} = require("./person");
+// const {Person} = require("./person");
+require('./modules/fs');
 
-
-require('./modules/path')
+//require('./modules/path')
 // const person = new Person('Guilherme');
 
-// console.log(person.sayMyName())
+//console.log(person.sayMyName())
