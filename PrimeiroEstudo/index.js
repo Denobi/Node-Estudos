@@ -1,7 +1,10 @@
 // const {Person} = require("./person");
-require('./modules/fs');
+// require('./modules/fs');
 
-//require('./modules/path')
-// const person = new Person('Guilherme');
+// require('./modules/path')
+// // const person = new Person('Guilherme');
 
-//console.log(person.sayMyName())
+// //console.log(person.sayMyName())
+
+// require('./modules/http');
+require('./modules/express')
