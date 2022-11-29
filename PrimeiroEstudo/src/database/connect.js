@@ -1,8 +1,9 @@
 const mongoose = require("mongoose");
-
+const user = process.env.MONGODB_USER;
+const password = process.env.MONGODB_PASSWORD;
 const connectToDatabase = async () => {
   await mongoose.connect(
-    `mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_PASSWORD}@cursonodejs.shlslwh.mongodb.net/?retryWrites=true&w=majority`,
+    `mongodb+srv://admin:root@cursonodejs.shlslwh.mongodb.net/?retryWrites=true&w=majority`,
     (error) => {
       if (error) {
         return console.log(
