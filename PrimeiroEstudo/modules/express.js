@@ -4,6 +4,12 @@ const UserModel = require('../src/models/user.model');
 const app = express();
 
 app.use(express.json())
+
+app.use((req,res,next)=>{
+  console.log(req.body)
+})
+
+
 app.get('/home', (req,res)=>{
   res.status(200).send('<h1>HOME FROM EXPRESS </h1>')
 
